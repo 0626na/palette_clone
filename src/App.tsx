@@ -64,7 +64,7 @@ function App() {
             path="/palette/indian"
             element={<PaletteComponent ColorData={indian} />}
           />
-          <Route path="/" element={<Home />} />
+          <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
         </Routes>
       </Router>
     </>
