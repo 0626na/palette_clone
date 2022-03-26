@@ -1,4 +1,6 @@
 import { useRecoilValue } from "recoil";
+import { Helmet } from "react-helmet";
+
 import {
   ColorsRGBAmerican,
   ColorsRGBAussie,
@@ -7,9 +9,11 @@ import {
   ColorsRGBDutch,
   ColorsRGBFlat,
   ColorsRGBFrench,
-} from "./atom";
-import Header from "./Components/Header";
-import PreviewComponent from "./Components/PalettePreview";
+  ColorsRGBGerman,
+  ColorsRGBIndian,
+} from "../atom";
+import Header from "../Components/Header";
+import PreviewComponent from "../Components/PalettePreview";
 import {
   HomeContents,
   HomeRoot,
@@ -18,7 +22,7 @@ import {
   PaletteIcon,
   PaletteLink,
   PaletteName,
-} from "./Components/StyledComponents";
+} from "../Components/StyledComponents";
 
 export const Home = () => {
   const flat = useRecoilValue(ColorsRGBFlat);
@@ -28,6 +32,8 @@ export const Home = () => {
   const aussie = useRecoilValue(ColorsRGBAussie);
   const dutch = useRecoilValue(ColorsRGBDutch);
   const france = useRecoilValue(ColorsRGBFrench);
+  const german = useRecoilValue(ColorsRGBGerman);
+  const indian = useRecoilValue(ColorsRGBIndian);
 
   const paletteVariant = {
     hover: {
@@ -37,6 +43,7 @@ export const Home = () => {
   };
   return (
     <>
+      <Helmet title="🎨 Flat UI Palette Clone" />
       <Header />
       <HomeRoot>
         <HomeContents>
@@ -107,6 +114,26 @@ export const Home = () => {
               <PaletteBoxContents>
                 <PaletteName>French Palette</PaletteName>
                 <PaletteIcon>🇫🇷</PaletteIcon>
+              </PaletteBoxContents>
+            </PaletteBox>
+          </PaletteLink>
+          {/*독일 팔레트*/}
+          <PaletteLink to="/palette/german">
+            <PaletteBox variants={paletteVariant} whileHover="hover">
+              <PreviewComponent ColorData={german} />
+              <PaletteBoxContents>
+                <PaletteName>German Palette</PaletteName>
+                <PaletteIcon>🇩🇪</PaletteIcon>
+              </PaletteBoxContents>
+            </PaletteBox>
+          </PaletteLink>
+          {/*인도 팔레트 */}
+          <PaletteLink to="/palette/indian">
+            <PaletteBox variants={paletteVariant} whileHover="hover">
+              <PreviewComponent ColorData={indian} />
+              <PaletteBoxContents>
+                <PaletteName>Indian Palette</PaletteName>
+                <PaletteIcon>🇮🇳</PaletteIcon>
               </PaletteBoxContents>
             </PaletteBox>
           </PaletteLink>

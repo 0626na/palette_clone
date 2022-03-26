@@ -1,3 +1,4 @@
+import { m } from "framer-motion";
 import { atom } from "recoil";
 
 interface IColor {
@@ -630,5 +631,183 @@ export const ColorsRGBFrench = atom<IColorPalette>({
       },
     ],
     paletteName: "French Palette",
+  },
+});
+
+export const ColorsRGBGerman = atom<IColorPalette>({
+  key: "german_rgb",
+  default: {
+    colors: [
+      {
+        color: "rgb(252, 92, 101)",
+        name: "FUSION RED",
+      },
+      {
+        color: "rgb(253, 150, 68)",
+        name: "ORANGE HIBISCUS",
+      },
+      {
+        color: "rgb(254, 211, 48)",
+        name: "FLIRTATIOUS",
+      },
+      {
+        color: "rgb(38, 222, 129)",
+        name: "REPTILE GREEN",
+      },
+      {
+        color: "rgb(43, 203, 186)",
+        name: "MAXIUM BLUE GREEN",
+      },
+      {
+        color: "rgb(235, 59, 90)",
+        name: "DESIRE",
+      },
+      {
+        color: "rgb(250, 130, 49)",
+        name: "BENIUKON BRONZE",
+      },
+      {
+        color: "rgb(247, 183, 49)",
+        name: "NYC TAXI",
+      },
+      {
+        color: "rgb(32, 191, 107)",
+        name: "ALGAL FUEL",
+      },
+      {
+        color: "rgb(15, 185, 177)",
+        name: "TURQUOISE TOPAZ",
+      },
+      {
+        color: "rgb(69, 170, 242)",
+        name: "HIGH BLUE",
+      },
+      {
+        color: "rgb(75, 123, 236)",
+        name: "C64 NTSC",
+      },
+      {
+        color: "rgb(165, 94, 234)",
+        name: "LIGHTER PURPLE",
+      },
+      {
+        color: "rgb(209, 216, 224)",
+        name: "TWINKLE BLUE",
+      },
+      {
+        color: "rgb(119, 140, 163)",
+        name: "BLUE GRAY",
+      },
+      {
+        color: "rgb(45, 152, 218)",
+        name: "BOYZONE",
+      },
+      {
+        color: "rgb(56, 103, 214)",
+        name: "ROYAL BLUE",
+      },
+      {
+        color: "rgb(136, 84, 208)",
+        name: "GLOOMY PURPLE",
+      },
+      {
+        color: "rgb(165, 177, 194)",
+        name: "INNUENDO",
+      },
+      {
+        color: "rgb(75, 101, 132)",
+        name: "BLUE HORIZON",
+      },
+    ],
+    paletteName: "German Palette",
+  },
+});
+
+export const ColorsRGBIndian = atom<IColorPalette>({
+  key: "indian_rgb",
+  default: {
+    colors: [
+      {
+        color: "rgb(254, 164, 127)",
+        name: "ORCHID ORANGE",
+      },
+      {
+        color: "rgb(37, 204, 247)",
+        name: "SPIRO DISCO BALl",
+      },
+      {
+        color: "rgb(234, 181, 67)",
+        name: "HONEY GROW",
+      },
+      {
+        color: "rgb(85, 230, 193)",
+        name: "SWEET GARDEN",
+      },
+      {
+        color: "rgb(202, 211, 200)",
+        name: "FALLING STAR",
+      },
+      {
+        color: "rgb(249, 127, 81)",
+        name: "RICH GARDENIA",
+      },
+      {
+        color: "rgb(27, 156, 252)",
+        name: "CLEAR CHILL",
+      },
+      {
+        color: "rgb(248, 239, 186)",
+        name: "SARAWAK WHITE PEPPER",
+      },
+      {
+        color: "rgb(88, 177, 159)",
+        name: "KEPPEL",
+      },
+      {
+        color: "rgb(44, 58, 71)",
+        name: "SHIP`S OFFICER",
+      },
+      {
+        color: "rgb(179, 55, 113)",
+        name: "FIERY FUCHSIA",
+      },
+      {
+        color: "rgb(59, 59, 152)",
+        name: "BLUE BELL",
+      },
+      {
+        color: "rgb(253, 114, 114)",
+        name: "GEORGIA PEACH ",
+      },
+      {
+        color: "rgb(154, 236, 219)",
+        name: "OASIS STREAM",
+      },
+      {
+        color: "rgb(214, 162, 232)",
+        name: "BRIGHT UBE",
+      },
+      {
+        color: "rgb(109, 33, 79)",
+        name: "MAGENTA PURPLE",
+      },
+      {
+        color: "rgb(24, 44, 97)",
+        name: "ENDING NAVY BLUE",
+      },
+      {
+        color: "rgb(252, 66, 123)",
+        name: "SASQUATCH SOCKS",
+      },
+      {
+        color: "rgb(189, 197, 129)",
+        name: "PINE GLADE",
+      },
+      {
+        color: "rgb(130, 88, 159)",
+        name: "HIGHLIGHTER LAVENDER",
+      },
+    ],
+    paletteName: "Indian Palette",
   },
 });

@@ -1,5 +1,6 @@
 import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
 import { IColorPalette } from "../atom";
 import {
@@ -13,7 +14,6 @@ import {
   Palette,
   PaletteBack,
   PaletteHeader,
-  PaletteLink,
   PaletteText,
   PaletteTitle,
   ShowCopyTextArea,
@@ -39,6 +39,7 @@ const PaletteComponent = ({ ColorData }: IPalette) => {
   };
   return (
     <>
+      <Helmet title={ColorData.paletteName} />
       <PaletteHeader>
         <PaletteBack onClick={goBack}> ← Back</PaletteBack>
         <PaletteTitle>{ColorData.paletteName}</PaletteTitle>

@@ -8,9 +8,11 @@ import {
   ColorsRGBDutch,
   ColorsRGBFlat,
   ColorsRGBFrench,
+  ColorsRGBGerman,
+  ColorsRGBIndian,
 } from "./atom";
 import PaletteComponent from "./Components/PaletteComponent";
-import { Home } from "./Home";
+import { Home } from "./Routers/Home";
 
 function App() {
   const flat = useRecoilValue(ColorsRGBFlat);
@@ -20,6 +22,8 @@ function App() {
   const aussie = useRecoilValue(ColorsRGBAussie);
   const dutch = useRecoilValue(ColorsRGBDutch);
   const france = useRecoilValue(ColorsRGBFrench);
+  const german = useRecoilValue(ColorsRGBGerman);
+  const indian = useRecoilValue(ColorsRGBIndian);
   return (
     <>
       <Router>
@@ -51,6 +55,14 @@ function App() {
           <Route
             path="/palette/france"
             element={<PaletteComponent ColorData={france} />}
+          />
+          <Route
+            path="/palette/german"
+            element={<PaletteComponent ColorData={german} />}
+          />
+          <Route
+            path="/palette/indian"
+            element={<PaletteComponent ColorData={indian} />}
           />
           <Route path="/" element={<Home />} />
         </Routes>
