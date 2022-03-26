@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/palette_clone/static/js/main.cefaaeb7.js",
+    "index.html": "/palette_clone/index.html",
+    "main.cefaaeb7.js.map": "/palette_clone/static/js/main.cefaaeb7.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.cefaaeb7.js"
+  ]
+}
