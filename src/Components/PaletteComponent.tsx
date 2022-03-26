@@ -35,7 +35,7 @@ const PaletteComponent = ({ ColorData }: IPalette) => {
     setTimeout(() => setClick((prev) => !prev), 700);
   };
   const goBack = () => {
-    navigate("/");
+    navigate(`${process.env.PUBLIC_URL}/`);
   };
   return (
     <>
