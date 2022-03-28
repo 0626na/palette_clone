@@ -1,5 +1,6 @@
 import { m } from "framer-motion";
 import { atom } from "recoil";
+import { IPalette } from "./Components/PaletteComponent";
 
 interface IColor {
   color: string;
@@ -809,5 +810,272 @@ export const ColorsRGBIndian = atom<IColorPalette>({
       },
     ],
     paletteName: "Indian Palette",
+  },
+});
+
+export const ColorsRGBRussian = atom<IColorPalette>({
+  key: "russian_rgb",
+  default: {
+    colors: [
+      {
+        color: "rgb(243, 166, 131)",
+        name: "CREAMY PEACH",
+      },
+      {
+        color: "rgb(247, 215, 148)",
+        name: "ROSY HIGHRIGHT",
+      },
+      {
+        color: "rgb(119, 139, 235)",
+        name: "SOFT BLUE",
+      },
+      {
+        color: "rgb(231, 127, 103)",
+        name: "BREWED MUSTARD",
+      },
+      {
+        color: "rgb(207, 106, 135)",
+        name: "OLD GERANIUM",
+      },
+      {
+        color: "rgb(241, 144, 102)",
+        name: "SAWTOOTH AAk",
+      },
+      {
+        color: "rgb(245, 205, 121)",
+        name: "SUMMERTIME",
+      },
+      {
+        color: "rgb(84, 109, 229)",
+        name: "CORNFLOWER",
+      },
+      {
+        color: "rgb(225, 95, 65)",
+        name: "TIGERLILY",
+      },
+      {
+        color: "rgb(196, 69, 105)",
+        name: "DEEP ROSE",
+      },
+      {
+        color: "rgb(120, 111, 166)",
+        name: "PURPLE MOUNTAIN MAJESTY",
+      },
+      {
+        color: "rgb(248, 165, 194)",
+        name: "ROGUE PINK",
+      },
+      {
+        color: "rgb(99, 205, 218)",
+        name: "SQUEAKY",
+      },
+      {
+        color: "rgb(234, 134, 133)",
+        name: "APPLE VALLEY",
+      },
+      {
+        color: "rgb(89, 98, 117)",
+        name: "PENCIL LEAD",
+      },
+      {
+        color: "rgb(87, 75, 144)",
+        name: "PURPLE CORALLTE",
+      },
+      {
+        color: "rgb(247, 143, 179)",
+        name: "FLAMINGO PINK",
+      },
+      {
+        color: "rgb(61, 193, 211)",
+        name: "BLUE CURACAO",
+      },
+      {
+        color: "rgb(230, 103, 103)",
+        name: "PORCELAIN ROSE ",
+      },
+      {
+        color: "rgb(48, 57, 82)",
+        name: "BISCAY",
+      },
+    ],
+    paletteName: "Russian Palette",
+  },
+});
+
+export const ColorsRGBSPanish = atom<IColorPalette>({
+  key: "spanish_rgb",
+  default: {
+    colors: [
+      {
+        color: "rgb(64, 64, 122)",
+        name: "JACKSONS PURPLE",
+      },
+      {
+        color: "rgb(112, 111, 211)",
+        name: "64 PURPLE",
+      },
+      {
+        color: "rgb(247, 241, 227)",
+        name: "SWAN WHITE",
+      },
+      {
+        color: "rgb(52, 172, 224)",
+        name: "SUMMER SKY",
+      },
+      {
+        color: "rgb(51, 217, 178)",
+        name: "CELESTIAL GREEN",
+      },
+      {
+        color: "rgb(44, 44, 84)",
+        name: "LUCKY POINT",
+      },
+      {
+        color: "rgb(71, 71, 135)",
+        name: "LIBERTY",
+      },
+      {
+        color: "rgb(170, 166, 157)",
+        name: "HOT STONE",
+      },
+      {
+        color: "rgb(34, 112, 147)",
+        name: "DEVIL BLUE",
+      },
+      {
+        color: "rgb(33, 140, 116)",
+        name: "PALM SPRINGS SPLASH",
+      },
+      {
+        color: "rgb(255, 82, 82)",
+        name: "FLUORESCENT RED",
+      },
+      {
+        color: "rgb(255, 121, 63)",
+        name: "SYNTHETIC PUMPKIN",
+      },
+      {
+        color: "rgb(209, 204, 192)",
+        name: "CROCODILE TOOTH",
+      },
+      {
+        color: "rgb(255, 177, 66)",
+        name: "MANDARIN SORBET",
+      },
+      {
+        color: "rgb(255, 218, 121)",
+        name: "SPICED BUTTERNUT",
+      },
+      {
+        color: "rgb(179, 57, 57)",
+        name: "EYE OF NEWT",
+      },
+      {
+        color: "rgb(205, 97, 51)",
+        name: "CHILEAN FIRE",
+      },
+      {
+        color: "rgb(132, 129, 122)",
+        name: "GREY PORCELAIN",
+      },
+      {
+        color: "rgb(204, 142, 53)",
+        name: "ALAMEDA OCHRE",
+      },
+      {
+        color: "rgb(204, 174, 98)",
+        name: "DESERT",
+      },
+    ],
+    paletteName: "Spanish Palette",
+  },
+});
+
+export const ColorsRGBTurkish = atom<IColorPalette>({
+  key: "turkish_rgb",
+  default: {
+    colors: [
+      {
+        color: "rgb(205, 132, 241)",
+        name: "BRIGHT LILAC",
+      },
+      {
+        color: "rgb(255, 204, 204)",
+        name: "PRETTY PLEASE",
+      },
+      {
+        color: "rgb(255, 77, 77)",
+        name: "LIGHT RED",
+      },
+      {
+        color: "rgb(255, 175, 64)",
+        name: "MANDARIN SORBET",
+      },
+      {
+        color: "rgb(255, 250, 101)",
+        name: "UNMELLOW YELLOW",
+      },
+      {
+        color: "rgb(197, 108, 240)",
+        name: "LIGHT PURPLE",
+      },
+      {
+        color: "rgb(255, 184, 184)",
+        name: "YOUNG SALMON",
+      },
+      {
+        color: "rgb(255, 56, 56)",
+        name: "RED ORANGE",
+      },
+      {
+        color: "rgb(255, 159, 26)",
+        name: "RADIANT YELLOW",
+      },
+      {
+        color: "rgb(255, 242, 0)",
+        name: "DORN YELLOW",
+      },
+      {
+        color: "rgb(50, 255, 126)",
+        name: "WINTERGREEN",
+      },
+      {
+        color: "rgb(126, 255, 245)",
+        name: "ELECTRIC BLUE",
+      },
+      {
+        color: "rgb(24, 220, 255)",
+        name: "NEON BLUE",
+      },
+      {
+        color: "rgb(125, 95, 255)",
+        name: "LIGHT SLATE BLUE",
+      },
+      {
+        color: "rgb(75, 75, 75)",
+        name: "SHADOWED STEEL",
+      },
+      {
+        color: "rgb(58, 227, 116)",
+        name: "WEIRD GREEN",
+      },
+      {
+        color: "rgb(103, 230, 220)",
+        name: "HAMMAN BLUE",
+      },
+      {
+        color: "rgb(23, 192, 235)",
+        name: "SPIRO DISCO BALL",
+      },
+      {
+        color: "rgb(113, 88, 226)",
+        name: "LIGHT INDIGO",
+      },
+      {
+        color: "rgb(61, 61, 61)",
+        name: "BALTIC SEA",
+      },
+    ],
+    paletteName: "Turkish Palette",
   },
 });

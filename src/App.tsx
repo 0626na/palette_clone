@@ -10,6 +10,9 @@ import {
   ColorsRGBFrench,
   ColorsRGBGerman,
   ColorsRGBIndian,
+  ColorsRGBRussian,
+  ColorsRGBSPanish,
+  ColorsRGBTurkish,
 } from "./atom";
 import PaletteComponent from "./Components/PaletteComponent";
 import { Home } from "./Routers/Home";
@@ -24,6 +27,9 @@ function App() {
   const france = useRecoilValue(ColorsRGBFrench);
   const german = useRecoilValue(ColorsRGBGerman);
   const indian = useRecoilValue(ColorsRGBIndian);
+  const russian = useRecoilValue(ColorsRGBRussian);
+  const spanish = useRecoilValue(ColorsRGBSPanish);
+  const turkish = useRecoilValue(ColorsRGBTurkish);
   return (
     <>
       <Router>
@@ -63,6 +69,18 @@ function App() {
           <Route
             path="/palette/indian"
             element={<PaletteComponent ColorData={indian} />}
+          />
+          <Route
+            path="/palette/russian"
+            element={<PaletteComponent ColorData={russian} />}
+          />
+          <Route
+            path="/palette/spanish"
+            element={<PaletteComponent ColorData={spanish} />}
+          />
+          <Route
+            path="/palette/turkish"
+            element={<PaletteComponent ColorData={turkish} />}
           />
           <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
         </Routes>

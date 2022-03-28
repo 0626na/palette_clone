@@ -11,6 +11,9 @@ import {
   ColorsRGBFrench,
   ColorsRGBGerman,
   ColorsRGBIndian,
+  ColorsRGBRussian,
+  ColorsRGBSPanish,
+  ColorsRGBTurkish,
 } from "../atom";
 import Header from "../Components/Header";
 import PreviewComponent from "../Components/PalettePreview";
@@ -34,6 +37,9 @@ export const Home = () => {
   const france = useRecoilValue(ColorsRGBFrench);
   const german = useRecoilValue(ColorsRGBGerman);
   const indian = useRecoilValue(ColorsRGBIndian);
+  const russian = useRecoilValue(ColorsRGBRussian);
+  const spanish = useRecoilValue(ColorsRGBSPanish);
+  const turkish = useRecoilValue(ColorsRGBTurkish);
 
   const paletteVariant = {
     hover: {
@@ -62,7 +68,7 @@ export const Home = () => {
             <PaletteBox variants={paletteVariant} whileHover="hover">
               <PreviewComponent ColorData={america} />
               <PaletteBoxContents>
-                <PaletteName>American Palette</PaletteName>
+                <PaletteName>{america.paletteName}</PaletteName>
                 <PaletteIcon>🇺🇸</PaletteIcon>
               </PaletteBoxContents>
             </PaletteBox>
@@ -72,7 +78,7 @@ export const Home = () => {
             <PaletteBox variants={paletteVariant} whileHover="hover">
               <PreviewComponent ColorData={british} />
               <PaletteBoxContents>
-                <PaletteName>British Palette</PaletteName>
+                <PaletteName>{british.paletteName}</PaletteName>
                 <PaletteIcon>🇬🇧</PaletteIcon>
               </PaletteBoxContents>
             </PaletteBox>
@@ -82,7 +88,7 @@ export const Home = () => {
             <PaletteBox variants={paletteVariant} whileHover="hover">
               <PreviewComponent ColorData={canada} />
               <PaletteBoxContents>
-                <PaletteName>Cananda Palette</PaletteName>
+                <PaletteName>{canada.paletteName}</PaletteName>
                 <PaletteIcon>🇨🇦</PaletteIcon>
               </PaletteBoxContents>
             </PaletteBox>
@@ -92,7 +98,7 @@ export const Home = () => {
             <PaletteBox variants={paletteVariant} whileHover="hover">
               <PreviewComponent ColorData={aussie} />
               <PaletteBoxContents>
-                <PaletteName>Aussie Palette</PaletteName>
+                <PaletteName>{aussie.paletteName}</PaletteName>
                 <PaletteIcon>🇦🇺</PaletteIcon>
               </PaletteBoxContents>
             </PaletteBox>
@@ -102,7 +108,7 @@ export const Home = () => {
             <PaletteBox variants={paletteVariant} whileHover="hover">
               <PreviewComponent ColorData={dutch} />
               <PaletteBoxContents>
-                <PaletteName>Dutch Palette</PaletteName>
+                <PaletteName>{dutch.paletteName}</PaletteName>
                 <PaletteIcon>🇳🇱</PaletteIcon>
               </PaletteBoxContents>
             </PaletteBox>
@@ -112,7 +118,7 @@ export const Home = () => {
             <PaletteBox variants={paletteVariant} whileHover="hover">
               <PreviewComponent ColorData={france} />
               <PaletteBoxContents>
-                <PaletteName>French Palette</PaletteName>
+                <PaletteName>{france.paletteName}</PaletteName>
                 <PaletteIcon>🇫🇷</PaletteIcon>
               </PaletteBoxContents>
             </PaletteBox>
@@ -122,7 +128,7 @@ export const Home = () => {
             <PaletteBox variants={paletteVariant} whileHover="hover">
               <PreviewComponent ColorData={german} />
               <PaletteBoxContents>
-                <PaletteName>German Palette</PaletteName>
+                <PaletteName>{german.paletteName}</PaletteName>
                 <PaletteIcon>🇩🇪</PaletteIcon>
               </PaletteBoxContents>
             </PaletteBox>
@@ -134,6 +140,36 @@ export const Home = () => {
               <PaletteBoxContents>
                 <PaletteName>Indian Palette</PaletteName>
                 <PaletteIcon>🇮🇳</PaletteIcon>
+              </PaletteBoxContents>
+            </PaletteBox>
+          </PaletteLink>
+          {/* 러시아 팔레트 */}
+          <PaletteLink to="/palette/russian">
+            <PaletteBox variants={paletteVariant} whileHover="hover">
+              <PreviewComponent ColorData={russian} />
+              <PaletteBoxContents>
+                <PaletteName>{russian.paletteName}</PaletteName>
+                <PaletteIcon>🇷🇺</PaletteIcon>
+              </PaletteBoxContents>
+            </PaletteBox>
+          </PaletteLink>
+          {/* 스페인 팔레트 */}
+          <PaletteLink to="/palette/spanish">
+            <PaletteBox variants={paletteVariant} whileHover="hover">
+              <PreviewComponent ColorData={spanish} />
+              <PaletteBoxContents>
+                <PaletteName>{spanish.paletteName}</PaletteName>
+                <PaletteIcon>🇪🇸</PaletteIcon>
+              </PaletteBoxContents>
+            </PaletteBox>
+          </PaletteLink>
+          {/* 터키 팔레트 */}
+          <PaletteLink to="/palette/turkish">
+            <PaletteBox variants={paletteVariant} whileHover="hover">
+              <PreviewComponent ColorData={turkish} />
+              <PaletteBoxContents>
+                <PaletteName>{turkish.paletteName}</PaletteName>
+                <PaletteIcon>🇹🇷</PaletteIcon>
               </PaletteBoxContents>
             </PaletteBox>
           </PaletteLink>
